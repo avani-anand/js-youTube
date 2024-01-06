@@ -1,4 +1,6 @@
-// random ka use krne p koe v random value ata h point m 
+// random --ka use krne p koe v random value ata h point m 
+// math.floor -- value point se hta deta h
+
 
 console.log(Math.random());       // 0.6427059477168442    -
 console.log((Math.random()*10)+1);      //8.996393668101051
