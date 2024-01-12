@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add remove element in dom</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+        <!-- //yha p javascipt k help se ek list element add krenge -->
+    </ul>
+</body>
+
+
+
+<script>
+
+//ek function bna rhe h upar me ek li item add krne k lie
+    function addLanguage(langName) {
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+        
+
+    }
+    addLanguage("python")   //passing value "paython" to li
+    addLanguage("typescript")
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

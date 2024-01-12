@@ -1,0 +1,70 @@
+<!-- iss project m jo v box p click kre pura page uss color ka ho jae aisa project bnana h
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Color Schema Switcher</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+ 
+         #grey{color: gray;}
+    
+       #pink{color: palevioletred;}
+       #yellow{color: yellow;}
+ 
+     
+     </style>
+ </head>
+ <body>
+ 
+     <h1>Color Schema Switcher</h1>
+ 
+
+         <span class="colorbox " id="grey">grey</span> <br>
+         <span class="colorbox " id="white">white</span><br>
+         <span class="colorbox " id="pink">pink</span><br>
+         <span class="colorbox " id="yellow">yellow</span><br>
+
+     <script>
+    const colorBoxs= document.querySelectorAll('.colorbox')
+    const body =document.querySelector('body');
+
+    colorBoxs.forEach(function (colorbox){
+        // console.log(colorbox);
+   colorbox.addEventListener('click',function(e){
+    // console.log(e);
+    // console.log(e.target);
+    if(e.target.id==='grey'){
+        body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id==='white'){
+        body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id==='pink'){
+        body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id==='yellow'){
+        body.style.backgroundColor=e.target.id;
+    }
+
+
+
+   })
+
+    })
+       
+     </script>
+ 
+ </body>
+ </html>
+ 
+
+
